@@ -949,70 +949,7 @@ input[type=submit]:hover {
     color: #fff;
 }
 
-/* -------------------------------------------- MEDIA QUERY --------------------------------------------*/ 
-
-/* For tablets: */
-
-@media (max-width: 750px) {
-        /*---staff---*/
-    .ourstaff{
-        grid-template-columns: 5vw 79vw 5vw;;
-        grid-template-rows: 40vh 7vh auto;
-    }
-
-    .staffs{
-        grid-template-columns: 78vw;
-        justify-content: center;
-        row-gap: 2rem;
-    }
-
-    .individual {
-        flex-direction: column;
-        text-align: center;
-        
-    }
-    
-    /*---review*/
-    .review{
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 70%;
-        grid-template-rows: 130px repeat(9, auto);
-        grid-template-areas: 
-        "title"
-        "first"
-        "second"
-        "third"
-        "fourth"
-        "fifth"
-        "sixth"
-        "seventh"
-        "eigth"
-        "ninth";
-        
-    }
-
-    /*---about---*/
-    .about{
-        margin-top: 80px;
-        grid-template-columns: 5vw 89vw 5vw;
-        grid-template-rows: 35vh auto;
-    }
-
-    .decoimg {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .introduce {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-
-    .deco {
-        display:none;
-    }
-  
+@media (min-width:750px) {
     .main{ 
         text-align: center;
     }
@@ -1107,60 +1044,7 @@ input[type=submit]:hover {
     }
 }
 
-
-/* For Desktop: */
-
-@media (min-width: 750px) and (max-width:1023px){
-        /*---staff---*/
-    .ourstaff{
-        grid-template-columns: 10vw 78vw 10vw;;
-        grid-template-rows: 40vh 7vh auto;
-    }
-
-    .staffs{
-        grid-template-columns: repeat(2,48vw);
-        justify-content: center;
-        row-gap: 2rem;
-    }
-    .individual {
-        flex-direction: column;
-        text-align: center;
-    }
-    /*---review---*/
-    .review{
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2, 35%);
-        grid-template-rows: 130px repeat(5, auto);
-        grid-template-areas: 
-        "title title"
-        "first second"
-        "third fourth"
-        "fifth sixth"
-        "seventh eigth"
-        "ninth .";
-    }
-    /*---about---*/
-    .about{
-        margin-top: 80px;
-        grid-template-columns: 20vw 59vw 20vw;
-        grid-template-rows: 35vh auto;
-    }
-
-    .decoimg {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .introduce {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-
-    .deco {
-        display:none;
-    }
-  
+@media (min-width:970px) {
     .main{ 
         text-align: center;
     }
@@ -1256,6 +1140,130 @@ input[type=submit]:hover {
         color: #fff;
     }
 }
+
+
+/* -------------------------------------------- MEDIA QUERY --------------------------------------------*/ 
+
+/* For tablets: */
+
+@media (max-width: 750px) {
+        /*---staff---*/
+    .ourstaff{
+        grid-template-columns: 5vw 79vw 5vw;;
+        grid-template-rows: 40vh 7vh auto;
+    }
+
+    .staffs{
+        grid-template-columns: 78vw;
+        justify-content: center;
+        row-gap: 2rem;
+    }
+
+    .individual {
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    
+    /*---review*/
+    .review{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 70%;
+        grid-template-rows: 130px repeat(9, auto);
+        grid-template-areas: 
+        "title"
+        "first"
+        "second"
+        "third"
+        "fourth"
+        "fifth"
+        "sixth"
+        "seventh"
+        "eigth"
+        "ninth";
+        
+    }
+
+    /*---about---*/
+    .about{
+        margin-top: 80px;
+        grid-template-columns: 5vw 89vw 5vw;
+        grid-template-rows: 35vh auto;
+    }
+
+    .decoimg {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .introduce {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .deco {
+        display:none;
+    }
+  
+    
+}
+
+
+/* For Desktop: */
+
+@media (min-width: 750px) and (max-width:1023px){
+        /*---staff---*/
+    .ourstaff{
+        grid-template-columns: 10vw 78vw 10vw;;
+        grid-template-rows: 40vh 7vh auto;
+    }
+
+    .staffs{
+        grid-template-columns: repeat(2,48vw);
+        justify-content: center;
+        row-gap: 2rem;
+    }
+    .individual {
+        flex-direction: column;
+        text-align: center;
+    }
+    /*---review---*/
+    .review{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 35%);
+        grid-template-rows: 130px repeat(5, auto);
+        grid-template-areas: 
+        "title title"
+        "first second"
+        "third fourth"
+        "fifth sixth"
+        "seventh eigth"
+        "ninth .";
+    }
+    /*---about---*/
+    .about{
+        margin-top: 80px;
+        grid-template-columns: 20vw 59vw 20vw;
+        grid-template-rows: 35vh auto;
+    }
+
+    .decoimg {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .introduce {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .deco {
+        display:none;
+    }
+}
+    
 
 @media (max-width:750px){
     .header-nav ul:nth-child(1){
